@@ -1,0 +1,59 @@
+.navBarBox{
+    width: 100vw;
+    height: 80px;
+    background-color: #3B5998;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navBarLeft{
+    flex: 3;
+    text-align: center;
+}
+
+
+.navBarLeft .logo{
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navBarCenter{
+    flex: 5;
+    text-align: center;
+}
+
+.navBarCenter .searchBarBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    display: inline-flex;
+}
+
+.navBarRight{
+    flex: 4;
+    flex-direction: row;
+}
+
+.navBarRight .navBarLink{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBarRight .navBarIcons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBarRight .pic .profilePicImg{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
