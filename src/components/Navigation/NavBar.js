@@ -38,9 +38,9 @@ function NavBar(){
                         <SettingsIcon />
                         <span className="iconTag">3</span>
                     </div>
-                </div>
-                <div className="pic">
-                    <img src="/images/profilePic.jpg" alt="Profile Picture" className="profilePicImg" />
+                    <div className="pic">
+                        <img src="/images/profilePic.jpg" alt="Profile Picture" className="profilePicImg" />
+                    </div>
                 </div>
             </div>
         </div>
