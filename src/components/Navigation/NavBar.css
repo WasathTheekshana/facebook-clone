@@ -1,6 +1,6 @@
 .navBarBox{
     width: 100vw;
-    height: 80px;
+    height: 65px;
     background-color: #3B5998;
     display: flex;
     flex-direction: row;
@@ -34,21 +34,63 @@
     display: inline-flex;
 }
 
+.searchIcon{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.searchIcon:hover{
+    color: gray;
+}
+
+.searchBarBox{
+    width: 90%;
+    height: 35px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBarBox input{
+    border: none;
+    width: 80%;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+.searchBarBox input:focus{
+    outline: none;
+    border: none;
+}
+
 .navBarRight{
     flex: 4;
+    display: flex;
     flex-direction: row;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navBarRight .navBarLink{
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: 1.5rem;
+    padding-left: 20px;
+    font-weight: bold;
 }
 
 .navBarRight .navBarIcons{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 70px;
+}
+
+.navBarRight .navBarIcons .navBarIcon{
+    padding-right: 20px;
 }
 
 .navBarRight .pic .profilePicImg{
