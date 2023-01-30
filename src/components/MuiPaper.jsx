@@ -16,7 +16,7 @@ export default function SimplePaper(props) {
                         width: 300,
                         height: 150,
                     },
-                }}
+                }} 
             >
                 <Paper elevation={3} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', }}>
                     <h2>{props.name}</h2>

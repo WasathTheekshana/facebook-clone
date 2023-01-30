@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import StudentDetails from '../components/StudentDetails'
 import SimplePaper from "./MuiPaper";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 function Student() {
 
-    const StudentDetails = [
+    const [StudentDetails, setStudentDetails] = useState([
         {
             name: "Wasath Theekshana",
             age: "19",
@@ -40,28 +42,55 @@ function Student() {
             skill: "DevOps, Jqueary"
         },
 
-    ]
+    ]);
+
+
 
     const studentList = StudentDetails.map(aName => {
-        return(
+        return (
             <div>
-                <SimplePaper 
-                    name= {aName.name}
-                    age= {aName.age}
-                    email= {aName.email}
-                    skill= {aName.skill}
+                <SimplePaper
+                    name={aName.name}
+                    age={aName.age}
+                    email={aName.email}
+                    skill={aName.skill}
                 />
             </div>
         )
     })
 
+    const Btn = () => {
+        return (
+            <React.Fragment>
+                <Stack spacing={2} direction="row">
+                    <Button variant="outlined" onClick={addUserHandler}>Outlined</Button>
+                </Stack>
+            </React.Fragment>
+        )
+    };
     
+
+    const addUserHandler = () => {
+        const newUser = {
+            name: "Dakum Perera",
+            age: "21",
+            email: "asdperera@students.nsbm.ac.lk",
+            skill: "DevOps, QA Enginere"
+        };
+
+        setStudentDetails((StudentDetails) => StudentDetails.concat(newUser));
+    };
+
+
+
+
     return (
         <div>
+            {Btn()}
             {studentList}
         </div>
     )
-}
+};
 
 
 export default Student;
